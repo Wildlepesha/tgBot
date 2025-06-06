@@ -11,7 +11,7 @@ namespace bot
     class Bot
     {
         private static ITelegramBotClient botClient;
-        private static readonly string token = "7779610944:AAF_6CoxhHT5PmxWtcrUSDuJzEpai1k_lW8";
+        private static readonly string token = "";
         public static async Task Start()
         {
             var botClient = new TelegramBotClient(token);
