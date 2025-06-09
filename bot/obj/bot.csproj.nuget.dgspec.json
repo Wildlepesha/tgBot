@@ -1,107 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\source\\repos\\bot\\bot\\bot.csproj": {}
+    "D:\\repos\\tgBot\\bot\\bot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\source\\repos\\bot\\bot\\bot.csproj": {
+    "D:\\repos\\tgBot\\bot\\bot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\bot\\bot\\bot.csproj",
+        "projectUniqueName": "D:\\repos\\tgBot\\bot\\bot.csproj",
         "projectName": "bot",
-        "projectPath": "C:\\Users\\PC\\source\\repos\\bot\\bot\\bot.csproj",
+        "projectPath": "D:\\repos\\tgBot\\bot\\bot.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\source\\repos\\bot\\bot\\obj\\",
+        "outputPath": "D:\\repos\\tgBot\\bot\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "C:\\Users\\PC\\source\\repos\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj": {
-                "projectPath": "C:\\Users\\PC\\source\\repos\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
-            },
-            "PRTelegramBot": {
-              "target": "Package",
-              "version": "[0.7.8, )"
-            },
-            "Telegram.Bot": {
-              "target": "Package",
-              "version": "[22.4.2, )"
-            },
-            "YamlDotNet": {
-              "target": "Package",
-              "version": "[16.3.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\PC\\source\\repos\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
-        "projectName": "ConsoleApp2",
-        "projectPath": "C:\\Users\\PC\\source\\repos\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\source\\repos\\ConsoleApp2\\ConsoleApp2\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "F:\\vs shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -129,13 +42,43 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "PRTelegramBot": {
+              "target": "Package",
+              "version": "[0.7.8, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.119, )"
+            },
+            "System.Data.SQLite.Linq": {
+              "target": "Package",
+              "version": "[1.0.119, )"
+            },
+            "Telegram.Bot": {
+              "target": "Package",
+              "version": "[22.4.2, )"
+            },
+            "YamlDotNet": {
+              "target": "Package",
+              "version": "[16.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -152,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,17 +1,32 @@
-﻿using System;
+﻿using bot;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using bot;
-using Telegram.Bot.Types;
 using Telegram.Bot;
+using Telegram.Bot.Types;
+using System.Data.SQLite;
+using System.Data;
 
 namespace bot
 {
     class UpdateHandler
     {
         public static int step = 1;
+        public static bool orderInProgress = false;
+
+        public static void sqlManage(string expression)
+        {
+            string connectionString = "Data Source=userdata.sqlite;Version=3;";
+            SQLiteConnection connection = new SQLiteConnection(connectionString);
+            connection.Open();
+            SQLiteCommand command = new SQLiteCommand(expression, connection);
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
         public static async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
         {
             if (update.Message is { } message)
@@ -37,48 +52,68 @@ namespace bot
                     replyMarkup: KeyboardHelper.GetMainMenu()
                 );
             }
+            else if (orderInProgress && message.Text != null)
+            {
+                await botClient.SendMessage(
+                    chatId,
+                    message.Text
+                );
+                string[] data = message.Text.Split(" ");
+                string expression = $"insert into user_info (chatId, surnamename, firstname, secondname, phone, email) values ({message.Chat.Id}, '{data[0]}', '{data[1]}', '{data[2]}', {data[3]}, '{data[4]}');";
+                try
+                {
+                    sqlManage(expression);
+                } catch (SQLiteException ex)
+                {
+                    Console.WriteLine($"Ошибка: {ex.Message} запуск изменения данных");
+                    expression = $"update user_info set surnamename = '{data[0]}', firstname = '{data[1]}', secondname = '{data[2]}', phone = {data[3]}, email = '{data[4]}' where chatId = {message.Chat.Id};";
+                    sqlManage(expression);
+                }
+            }
             else
             {
-                await botClient.SendMessage(chatId, "Я не понимаю. Нажми кнопку ниже.", replyMarkup: KeyboardHelper.GetMainMenu());
+                await botClient.SendMessage(chatId, "Я не понимаю. Нажми кнопку ниже.", replyMarkup: KeyboardHelper.ResetMenu());
             }
         }
 
         private static async Task HandleCallbackQuery(ITelegramBotClient botClient, CallbackQuery callbackQuery)
         {
-            long chatId = callbackQuery.Message.Chat.Id;
-            string data = callbackQuery.Data;
+            long? chatId = callbackQuery.Message.Chat.Id;
+            string? data = callbackQuery.Data;
             
-
-            if (data == "orderSelf")
-            {
-                await botClient.EditMessageText(chatId, callbackQuery.Message.Id, "Телефон для связи с флористом +89092022121", replyMarkup: KeyboardHelper.GetMenu());
-            }
-            else if (data == "mainMenu")
-            {
-                await botClient.EditMessageText(chatId, callbackQuery.Message.Id, MessageManager.GetMessage("start"), replyMarkup: KeyboardHelper.GetMainMenu());
-               
-            }
-            else if (data == "orderCombo")
-            {
-                await SendAlbum(botClient, chatId, 1);
-            }
-            else if (data == "otherDate")
-            {
-
-            }
-            else if (data == "back")
-            {
-                await botClient.SendMessage(
+            switch (data) {
+                case "mainMenu":
+                    await botClient.EditMessageText(chatId, callbackQuery.Message.Id, MessageManager.GetMessage("start"), replyMarkup: KeyboardHelper.GetMainMenu());
+                    break;
+                case "otherDate":
+                    break;
+                case "orderCombo":
+                    break;
+                case "orderMono":
+                    orderInProgress = true;
+                    await botClient.EditMessageText(chatId, callbackQuery.Message.Id, MessageManager.GetMessage("orderForm"), replyMarkup: KeyboardHelper.GetMainMenu());
+                    break;
+                case "orderComp":
+                    break;
+                case "orderSelf":
+                    await botClient.EditMessageText(chatId, callbackQuery.Message.Id, MessageManager.GetMessage("managerPhone"), replyMarkup: KeyboardHelper.GetMenu());
+                    break;
+                case "back":
+                    await botClient.SendMessage(
                                     chatId,
                                     MessageManager.GetMessage($"orderStep_{step}"),
                                     replyMarkup: KeyboardHelper.GetMainMenu()
                                 );
-                if (step > 1)
-                {
-                    step -= 1;
-                }
+                    if (step > 1)
+                    {
+                        step -= 1;
+                    }
+                    break;
+                default:
+                    break;
             }
-            else if (data.Contains("orderStep_"))
+            
+            if (data.Contains("orderStep_"))
             {
                 var steps = data.Split("_");
                 if (steps[1] == "1")
@@ -92,13 +127,11 @@ namespace bot
                     step += 1;
                 }
             }
-
-            if (data.StartsWith("photo_"))
-            {
-                int page = int.Parse(data.Split('_')[1]);
-                await SendAlbum(botClient, chatId, page);
-            }
-
+            //else if (data.StartsWith("photo_"))
+            //{
+            //    int page = int.Parse(data.Split('_')[1]);
+            //    await SendAlbum(botClient, chatId, page);
+            //}
             await botClient.AnswerCallbackQuery(callbackQuery.Id);
         }
 
@@ -108,40 +141,40 @@ namespace bot
             return Task.CompletedTask;
         }
 
-        static async Task SendAlbum(ITelegramBotClient botClient, long chatId, int page)
-        {
-            var pages = ProductManager.GetProductsList();
-            var products = ProductManager.GetProductsByPage(pages, page);
-            var oldMessages = ProductManager.GetUserAlbum(chatId);
+        //static async Task SendAlbum(ITelegramBotClient botClient, long chatId, int page)
+        //{
+        //    var pages = ProductManager.GetProductsList();
+        //    var products = ProductManager.GetProductsByPage(pages, page);
+        //    var oldMessages = ProductManager.GetUserAlbum(chatId);
 
-            foreach (var message in oldMessages)
-            {
-                try
-                {
-                    await botClient.DeleteMessage(chatId, message);
-                } catch { }
+        //    foreach (var message in oldMessages)
+        //    {
+        //        try
+        //        {
+        //            await botClient.DeleteMessage(chatId, message);
+        //        } catch { }
                 
-            }
+        //    }
 
-            List<InputMediaPhoto> media = new();
+        //    List<InputMediaPhoto> media = new();
 
-            foreach (var product in products)
-            {
-                media.Add(new InputMediaPhoto(product["picture"]));
-            }
-            List<int> newMessageIds = new();
-            var messages = await botClient.SendMediaGroup(chatId, media);
+        //    foreach (var product in products)
+        //    {
+        //        media.Add(new InputMediaPhoto(product["picture"]));
+        //    }
+        //    List<int> newMessageIds = new();
+        //    var messages = await botClient.SendMediaGroup(chatId, media);
 
-            foreach (var msg in messages)
-            {
-                newMessageIds.Add(msg.MessageId);
-            }
-            var navMessage = await botClient.SendMessage(chatId, $"Страница {page}/{ProductManager.TotalPages}", replyMarkup: KeyboardHelper.NavBar(page));
+        //    foreach (var msg in messages)
+        //    {
+        //        newMessageIds.Add(msg.MessageId);
+        //    }
+        //    var navMessage = await botClient.SendMessage(chatId, $"Страница {page}/{ProductManager.TotalPages}", replyMarkup: KeyboardHelper.NavBar(page));
             
-            newMessageIds.Add(navMessage.MessageId);
-            ProductManager.SaveUserAlbum(chatId, newMessageIds);
+        //    newMessageIds.Add(navMessage.MessageId);
+        //    ProductManager.SaveUserAlbum(chatId, newMessageIds);
             
-        }
+        //}
     }
 }
 

@@ -1,40 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\PC\\source\\repos\\bot\\",
+  "WorkspaceRootPath": "D:\\repos\\tgBot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|c:\\users\\pc\\source\\repos\\bot\\bot\\keyboardhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|solutionrelative:bot\\keyboardhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|c:\\users\\pc\\source\\repos\\bot\\bot\\updatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|d:\\repos\\tgbot\\bot\\updatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|solutionrelative:bot\\updatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|c:\\users\\pc\\source\\repos\\bot\\bot\\messagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|solutionrelative:bot\\messagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|c:\\users\\pc\\source\\repos\\bot\\bot\\productmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|solutionrelative:bot\\productmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\Downloads\\Telegram Desktop\\filtered_bouquets_v1_only (2).yml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CC4C48D-32D5-4936-863D-1615FE8BBA80}|..\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj|c:\\users\\pc\\source\\repos\\consoleapp2\\consoleapp2\\offerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|c:\\users\\pc\\source\\repos\\bot\\bot\\messages.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|solutionrelative:bot\\messages.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|c:\\users\\pc\\source\\repos\\bot\\bot\\bot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|d:\\repos\\tgbot\\bot\\bot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|solutionrelative:bot\\bot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|c:\\users\\pc\\source\\repos\\bot\\bot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|solutionrelative:bot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|d:\\repos\\tgbot\\bot\\bot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|solutionrelative:bot\\bot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|d:\\repos\\tgbot\\bot\\messages.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|solutionrelative:bot\\messages.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|d:\\repos\\tgbot\\bot\\keyboardhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|solutionrelative:bot\\keyboardhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\repos\\tgBot\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|d:\\repos\\tgbot\\bot\\productmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|solutionrelative:bot\\productmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|d:\\repos\\tgbot\\bot\\messagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC47A19-F29A-48E3-83E9-39D989829A0B}|bot\\bot.csproj|solutionrelative:bot\\messagemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,120 +42,116 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "filtered_bouquets_v1_only (2).yml",
-              "DocumentMoniker": "C:\\Users\\PC\\Downloads\\Telegram Desktop\\filtered_bouquets_v1_only (2).yml",
-              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Telegram Desktop\\filtered_bouquets_v1_only (2).yml",
-              "ToolTip": "C:\\Users\\PC\\Downloads\\Telegram Desktop\\filtered_bouquets_v1_only (2).yml",
-              "RelativeToolTip": "..\\..\\..\\Downloads\\Telegram Desktop\\filtered_bouquets_v1_only (2).yml",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAAAMUAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-03-02T21:36:51.218Z",
+              "DocumentIndex": 5,
+              "Title": ".gitignore",
+              "DocumentMoniker": "D:\\repos\\tgBot\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "D:\\repos\\tgBot\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-06-07T19:53:48.658Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "bot.csproj",
+              "DocumentMoniker": "D:\\repos\\tgBot\\bot\\bot.csproj",
+              "RelativeDocumentMoniker": "bot\\bot.csproj",
+              "ToolTip": "D:\\repos\\tgBot\\bot\\bot.csproj",
+              "RelativeToolTip": "bot\\bot.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-06T20:54:36.776Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ProductManager.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\bot\\bot\\ProductManager.cs",
+              "DocumentMoniker": "D:\\repos\\tgBot\\bot\\ProductManager.cs",
               "RelativeDocumentMoniker": "bot\\ProductManager.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\bot\\bot\\ProductManager.cs",
+              "ToolTip": "D:\\repos\\tgBot\\bot\\ProductManager.cs",
               "RelativeToolTip": "bot\\ProductManager.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACwAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAgwFUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-16T13:43:33.217Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "MessageManager.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\bot\\bot\\MessageManager.cs",
+              "DocumentMoniker": "D:\\repos\\tgBot\\bot\\MessageManager.cs",
               "RelativeDocumentMoniker": "bot\\MessageManager.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\bot\\bot\\MessageManager.cs",
+              "ToolTip": "D:\\repos\\tgBot\\bot\\MessageManager.cs",
               "RelativeToolTip": "bot\\MessageManager.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-16T12:56:06.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UpdateHandler.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\bot\\bot\\UpdateHandler.cs",
+              "DocumentMoniker": "D:\\repos\\tgBot\\bot\\UpdateHandler.cs",
               "RelativeDocumentMoniker": "bot\\UpdateHandler.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\bot\\bot\\UpdateHandler.cs",
+              "ToolTip": "D:\\repos\\tgBot\\bot\\UpdateHandler.cs",
               "RelativeToolTip": "bot\\UpdateHandler.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAawG8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAwwEwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-16T12:38:18.115Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "KeyboardHelper.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\bot\\bot\\KeyboardHelper.cs",
+              "DocumentMoniker": "D:\\repos\\tgBot\\bot\\KeyboardHelper.cs",
               "RelativeDocumentMoniker": "bot\\KeyboardHelper.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\bot\\bot\\KeyboardHelper.cs",
+              "ToolTip": "D:\\repos\\tgBot\\bot\\KeyboardHelper.cs",
               "RelativeToolTip": "bot\\KeyboardHelper.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAowDsAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-16T12:38:44.531Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OfferEntity.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\ConsoleApp2\\ConsoleApp2\\OfferEntity.cs",
-              "RelativeDocumentMoniker": "..\\ConsoleApp2\\ConsoleApp2\\OfferEntity.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\ConsoleApp2\\ConsoleApp2\\OfferEntity.cs",
-              "RelativeToolTip": "..\\ConsoleApp2\\ConsoleApp2\\OfferEntity.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T17:24:41.679Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "messages.json",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\bot\\bot\\messages.json",
+              "DocumentMoniker": "D:\\repos\\tgBot\\bot\\messages.json",
               "RelativeDocumentMoniker": "bot\\messages.json",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\bot\\bot\\messages.json",
+              "ToolTip": "D:\\repos\\tgBot\\bot\\messages.json",
               "RelativeToolTip": "bot\\messages.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-16T12:55:11.043Z"
+              "WhenOpened": "2025-02-16T12:55:11.043Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Bot.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\bot\\bot\\Bot.cs",
+              "DocumentMoniker": "D:\\repos\\tgBot\\bot\\Bot.cs",
               "RelativeDocumentMoniker": "bot\\Bot.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\bot\\bot\\Bot.cs",
+              "ToolTip": "D:\\repos\\tgBot\\bot\\Bot.cs",
               "RelativeToolTip": "bot\\Bot.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T12:38:06.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\bot\\bot\\Program.cs",
-              "RelativeDocumentMoniker": "bot\\Program.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\bot\\bot\\Program.cs",
-              "RelativeToolTip": "bot\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T15:33:21.011Z"
+              "WhenOpened": "2025-02-16T12:38:06.277Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -10,12 +10,11 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="PRTelegramBot" Version="0.7.8" />
+    <PackageReference Include="SQLite" Version="3.13.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
+    <PackageReference Include="System.Data.SQLite.Linq" Version="1.0.119" />
     <PackageReference Include="Telegram.Bot" Version="22.4.2" />
     <PackageReference Include="YamlDotNet" Version="16.3.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\ConsoleApp2\ConsoleApp2\ConsoleApp2.csproj" />
   </ItemGroup>
 
 </Project>

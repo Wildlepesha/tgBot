@@ -10,19 +10,25 @@ namespace bot
 {
     class MessageManager
     {
-        private static Dictionary<string, string> messages;
+        private static Dictionary<string, string>? messages;
 
         static MessageManager()
         {
-            string json = File.ReadAllText("C:\\Users\\PC\\source\\repos\\bot\\bot\\messages.json");
+            string? corePath = Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory())));
+            string json = File.ReadAllText(@$"{corePath}\messages.json");
             messages = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
-
         }
 
         public static string GetMessage(string key)
         {
-            return messages.ContainsKey(key) ? messages[key] : "Текст не найден";
+            string? placeholder;
+            try
+            {
+                return messages.TryGetValue(key, out placeholder) ? messages[key] : placeholder = "Текст не найден";
+            } catch (NullReferenceException ex)
+            {
+                throw ex;
+            }
         }
     }
-
 }

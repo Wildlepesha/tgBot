@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using Telegram.Bot.Types.ReplyMarkups;
@@ -38,32 +40,36 @@ namespace bot
 
         });
         }
-        public static InlineKeyboardMarkup NavBar(int currentPage)
+        public static InlineKeyboardMarkup ResetMenu()
         {
-            int totalPages = ProductManager.TotalPages;
-            var products = ProductManager.GetProductsList();
-            var productsPage = ProductManager.GetProductsByPage(products, currentPage);
-            InlineKeyboardMarkup buttons = new InlineKeyboardMarkup();
-
-            if (currentPage > 1)
-            {
-                buttons.AddButton(InlineKeyboardButton.WithCallbackData("Назад", $"photo_{currentPage - 1}"));
-                
-            }
-            if (currentPage < totalPages)
-            {
-                buttons.AddButton(InlineKeyboardButton.WithCallbackData("Вперед", $"photo_{currentPage + 1}"));
-            }
-
-            foreach (var product in productsPage)
-            {
-                buttons.AddNewRow(InlineKeyboardButton.WithCallbackData($"{product["name"]} {product["price"]}", $"product_{product["id"]}"));
-               
-            }
-            buttons.AddNewRow(menuMarkup);
-
-            return buttons;
+            return new InlineKeyboardMarkup(new[] { InlineKeyboardButton.WithCallbackData("Начать сначала", "reset") });
         }
+        //public static InlineKeyboardMarkup NavBar(int currentPage)
+        //{
+        //    int totalPages = ProductManager.TotalPages;
+        //    var products = ProductManager.GetProductsList();
+        //    var productsPage = ProductManager.GetProductsByPage(products, currentPage);
+        //    InlineKeyboardMarkup buttons = new InlineKeyboardMarkup();
+
+        //    if (currentPage > 1)
+        //    {
+        //        buttons.AddButton(InlineKeyboardButton.WithCallbackData("Назад", $"photo_{currentPage - 1}"));
+                
+        //    }
+        //    if (currentPage < totalPages)
+        //    {
+        //        buttons.AddButton(InlineKeyboardButton.WithCallbackData("Вперед", $"photo_{currentPage + 1}"));
+        //    }
+
+        //    foreach (var product in productsPage)
+        //    {
+        //        buttons.AddNewRow(InlineKeyboardButton.WithCallbackData($"{product["name"]} {product["price"]}", $"product_{product["id"]}"));
+               
+        //    }
+        //    buttons.AddNewRow(menuMarkup);
+
+        //    return buttons;
+        //}
         public static InlineKeyboardMarkup GetMenu()
         {
             return new InlineKeyboardMarkup(new[]
